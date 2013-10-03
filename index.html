@@ -12,21 +12,51 @@
 
 </head>
 <body>
-<h2>Todo</h2>
-<div ng-controller="TodoCtrl">
-    <span>{{remaining()}} of {{todos.length}} remaining</span>
-    [ <a href="" ng-click="archive()">archive</a> ]
-    <ul class="unstyled">
-        <li ng-repeat="todo in todos">
-            <input type="checkbox" ng-model="todo.done">
-            <span class="done-{{todo.done}}">{{todo.text}}</span>
-        </li>
-    </ul>
-    <form ng-submit="addTodo()">
-        <input type="text" ng-model="todoText"  size="30"
-               placeholder="add new todo here">
-        <input class="btn-primary" type="submit" value="add">
-    </form>
+
+<div class="container" ng-controller="TodoCtrl">
+
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-8">
+            <h2>A - Hidratos</h2>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="arroz" value="">
+                    Arroz
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="maiz" value="">
+                    maíz
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="pan" value="">
+                    Pan
+                </label>
+            </div>
+
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-8">
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-8">
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-8">
+
+        </div>
+
+    </div>
+
+
+
+
+
 </div>
 </body>
 </html>
