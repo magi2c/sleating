@@ -1,0 +1,104 @@
+  A - Hidratos
+    arroz
+    maíz
+    pan
+    pasta de sopa
+   B - Verduras
+    acelgas
+    alcachofas
+    brócoli
+    cardos
+    col
+    coliflor
+    espinacas
+    habas
+    judías tiernas
+    setas
+    soja
+   C - Legumbres
+    garbanzos
+    guisantes
+    judías secas
+    lentejas
+
+   D - Huerta
+    ajos
+    ajos tiernos
+    apio
+    berenjena
+    berros
+    calabacín
+    cebollas
+    endivias
+    espárragos
+    lechuga
+    nabos
+    pepino
+    perejil
+    pimientos
+    puerros
+    rábanos
+    repollo
+    tomates
+   E - Pescados
+    almejas
+    atún
+    bacalao
+    bonito
+    boquerones
+    caballa
+    calamares
+    gambas
+    mejillones
+    merluza
+    navajas
+    pulpo
+    rape
+    salmón
+    sardinas
+    trucha
+   F - Carnes y huevos
+    cerdo
+    conejo
+    cordero
+    embutidos
+    gallina
+    huevos
+    pato
+    pollo
+    ternera
+
+   G - Frutas
+    mandarina
+    manzana
+    melón
+    naranja
+    pera
+    piña natural
+    plátano
+    uva
+   H - Bebidas
+    agua
+    café (descafeinado)
+    leche
+    manzanilla
+    menta
+    té ("descafeinado")
+    valeriana
+    ¡no combina bien! 	 vino tinto (200 ml/comida)
+   I - Lácteos
+    cuajada
+    queso
+    yogur
+
+   J - Sazonadores
+    aceite caliente (freir, guisar...)
+    aceite crudo
+    espécies
+    sal
+    vinagre
+   K - Dulces
+    ¡no combina bien! 	 chocolate (sin azucar)
+    fructosa (símil del azúcar)
+    ¡no combina bien! 	 galletas con máx 3% de grasa
+    mermelada (sin azúcar)

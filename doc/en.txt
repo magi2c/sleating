@@ -1,0 +1,104 @@
+A - Carbohydrates
+    rice
+    corn
+    bread
+    pasta soup
+   B - Vegetables
+    chard
+    artichokes
+    broccoli
+    thistles
+    cabbage
+    cauliflower
+    spinach
+    lima beans
+    green beans
+    mushrooms
+    soy
+   C - Vegetables
+    chickpeas
+    green peas
+    dried beans
+    lentils
+
+   D - Huerta
+    garlic
+    garlic
+    celery
+    eggplant
+    watercress
+    zucchini
+    onions
+    endive
+    asparagus
+    lettuce
+    turnips
+    cucumber
+    parsley
+    peppers
+    leeks
+    radishes
+    cabbage
+    tomatoes
+   E - Fish
+    clams
+    tuna
+    cod
+    nice
+    anchovies
+    mackerel
+    squid
+    prawns
+    mussels
+    hake
+    knives
+    octopus
+    monkfish
+    salmon
+    sardines
+    trout
+   F - Meat and eggs
+    pork
+    rabbit
+    lamb
+    sausages
+    hen
+    eggs
+    duck
+    chicken
+    veal
+
+   G - Fruits
+    tangerine
+    apple
+    melon
+    orange
+    pear
+    pineapple
+    banana
+    grape
+   H - Drinks
+    water
+    coffee ( decaffeinated )
+    milk
+    chamomile
+    mint
+    tea ( " decaf " )
+    valerian
+    Not mix well ! red wine ( 200 ml / meal)
+   I - Dairy
+    curd
+    cheese
+    yogurt
+
+   J - Seasonings
+    hot oil ( frying , cooking ... )
+    crude oil
+    espécies
+    salt
+    vinegar
+   K - Sweets
+    Not mix well ! chocolate ( no sugar )
+    fructose ( sugar simile )
+    Not mix well ! cookies with max 3 % fat
+    jam ( no sugar)
