@@ -1,4 +1,12 @@
-function AppCtrl($scope) {
+function AppCtrl($scope, $http, $templateCache, $sce) {
+
+    var self = this;
+    $http.get("doc/t.json", {cache: $templateCache}).success(function(userComments, $scope) {
+        $scope.foods = userComments;
+        console.log(userComments);
+    });
+    console.log('sss');
+console.log($scope.foods);
     $scope.foods = {'hydrate' : [
         {'name': 'arroz', 'type': 'hydrate', 'phase':'1'},
         {'name': 'maíz', 'type': 'hydrate', 'phase':'1'},

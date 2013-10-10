@@ -1,9 +1,10 @@
-{'Carbohydrates' : [
+'Carbohydrates' : [
 {'name': 'rice', 'type': 'hydrate', 'phase':'1'},
 {'name': 'corn', 'type': 'hydrate', 'phase':'1'},
 {'name': 'bread', 'type': 'hydrate', 'phase':'1'},
 {'name': 'pasta soup', 'type': 'hydrate', 'phase':'1'},
-],'Vegetables' : [
+],
+'Vegetables' : [
 {'name': 'chard', 'type': 'hydrate', 'phase':'1'},
 {'name': 'artichokes', 'type': 'hydrate', 'phase':'1'},
 {'name': 'broccoli', 'type': 'hydrate', 'phase':'1'},
@@ -15,12 +16,14 @@
 {'name': 'green beans', 'type': 'hydrate', 'phase':'1'},
 {'name': 'mushrooms', 'type': 'hydrate', 'phase':'1'},
 {'name': 'soy', 'type': 'hydrate', 'phase':'1'},
-],'Vegetables' : [
+],
+'Vegetables' : [
 {'name': 'chickpeas', 'type': 'hydrate', 'phase':'1'},
 {'name': 'green peas', 'type': 'hydrate', 'phase':'1'},
 {'name': 'dried beans', 'type': 'hydrate', 'phase':'1'},
 {'name': 'lentils', 'type': 'hydrate', 'phase':'1'},
-],'Huerta' : [
+],
+'Huerta' : [
 {'name': 'garlic', 'type': 'hydrate', 'phase':'1'},
 {'name': 'garlic', 'type': 'hydrate', 'phase':'1'},
 {'name': 'celery', 'type': 'hydrate', 'phase':'1'},
@@ -39,7 +42,8 @@
 {'name': 'radishes', 'type': 'hydrate', 'phase':'1'},
 {'name': 'cabbage', 'type': 'hydrate', 'phase':'1'},
 {'name': 'tomatoes', 'type': 'hydrate', 'phase':'1'},
-],'Fish' : [
+],
+'Fish' : [
 {'name': 'clams', 'type': 'hydrate', 'phase':'1'},
 {'name': 'tuna', 'type': 'hydrate', 'phase':'1'},
 {'name': 'cod', 'type': 'hydrate', 'phase':'1'},
@@ -75,7 +79,8 @@
 {'name': 'pineapple', 'type': 'hydrate', 'phase':'1'},
 {'name': 'banana', 'type': 'hydrate', 'phase':'1'},
 {'name': 'grape', 'type': 'hydrate', 'phase':'1'},
-],'Drinks' : [
+],
+'Drinks' : [
 {'name': 'water', 'type': 'hydrate', 'phase':'1'},
 {'name': 'coffee ( decaffeinated )', 'type': 'hydrate', 'phase':'1'},
 {'name': 'milk', 'type': 'hydrate', 'phase':'1'},
@@ -84,7 +89,8 @@
 {'name': 'tea ( decaffeinated )', 'type': 'hydrate', 'phase':'1'},
 {'name': 'valerian', 'type': 'hydrate', 'phase':'1'},
 {'name': 'red wine ( 200 ml / meal)', 'type': 'hydrate', 'phase':'1'},
-],'Dairy' : [
+],
+'Dairy' : [
 {'name': 'curd', 'type': 'hydrate', 'phase':'1'},
 {'name': 'cheese', 'type': 'hydrate', 'phase':'1'},
 {'name': 'yogurt', 'type': 'hydrate', 'phase':'1'},
@@ -94,9 +100,10 @@
 {'name': 'espécies', 'type': 'hydrate', 'phase':'1'},
 {'name': 'salt', 'type': 'hydrate', 'phase':'1'},
 {'name': 'vinegar', 'type': 'hydrate', 'phase':'1'},
-],'Sweets' : [
+],
+'Sweets' : [
 {'name': 'chocolate ( no sugar )', 'type': 'hydrate', 'phase':'1'},
 {'name': 'fructose ( sugar simile )', 'type': 'hydrate', 'phase':'1'},
 {'name': 'cookies with max 3 % fat', 'type': 'hydrate', 'phase':'1'},
 {'name': 'jam ( no sugar)', 'type': 'hydrate', 'phase':'1'}
-]}
+]
