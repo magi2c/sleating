@@ -1,0 +1,41 @@
+.box-shadow(@arguments) {
+  -webkit-box-shadow:  @arguments;
+  -moz-box-shadow:  @arguments;
+  -ms-box-shadow:  @arguments;
+  -o-box-shadow:  @arguments;
+  box-shadow:  @arguments;
+}
+
+label.food-disabled {
+  text-decoration: line-through;
+  color: #ff0011;
+}
+label.food-check {
+  color: #2ecc71;
+}
+
+input[type=checkbox]:disabled {
+  border-color: #ff0011;
+  .box-shadow(inset 0 0 0 13px #ff0011);
+}
+
+section .list li.group {
+  .box-shadow(inset 4px 0 #edba22);
+}
+
+#layout-form {
+  li {
+    font-size: 1.1em;
+    label {
+      font-size: 1em;
+      margin: 0.2em 0;
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,36 +1,29 @@
 function AppCtrl($scope, $http, $templateCache, $sce) {
 
-    var self = this;
-    $http.get("doc/t.json", {cache: $templateCache}).success(function(userComments, $scope) {
-        $scope.foods = userComments;
-        console.log(userComments);
-    });
-    console.log('sss');
-console.log($scope.foods);
-    $scope.foods = {'hydrate' : [
-        {'name': 'arroz', 'type': 'hydrate', 'phase':'1'},
-        {'name': 'maíz', 'type': 'hydrate', 'phase':'1'},
-        {'name': 'pan', 'type': 'neutral', 'phase':'1'},
-        {'name': 'pasta de sopa', 'type': 'hydrate', 'phase':'1'}
-        ]};
-
     $scope.foodsCheck = [];
+    $scope.thin = true;
 
-    $scope.typeDisabled = {
-        hydrate: "",
-        neutral: "",
-        fat: "",
-        fruit: ""
+    $scope.getFoods = function() {
+        var self = this;
+        $http.get("doc/foods.json").success(function(jsonF) {
+            self.foods = jsonF;
+        });
+
+        return self.foods;
     };
+    $scope.foods = $scope.getFoods();
 
     $scope.resetTypeDisabled = function() {
-        $scope.typeDisabled = {
-            hydrate: "",
-            neutral: "",
-            fat: "",
-            fruit: ""
-        };
+        $scope.typeDisabled = {hydrate: "",neutral: "",fat: "",fruit: ""};
     };
+    $scope.resetTypeDisabled();
+
+
+    $scope.isFoodsCheck = function(food) {
+        var index = $scope.foodsCheck.indexOf(food)
+        return (index >= 0);
+    };
+
 
     $scope.inFoodsCheck = function(food) {
         var index = $scope.foodsCheck.indexOf(food)
@@ -45,21 +38,37 @@ console.log($scope.foods);
         angular.forEach($scope.foodsCheck, function(food) {
             $scope.typeDisabled[food.type] = 'food-disabled';
         });
-        $scope.checked = true;
+        //$scope.checked = true;
+    };
+
+
+    $scope.isFoodDisabled = function(food) {
+        if ($scope.addFoodClass(food) == 'food-disabled') {
+            return true;
+        }
+
+        return false;
+    };
+
+    $scope.addFoodClass = function(food) {
+        if ($scope.isFoodsCheck(food)) {
+            return 'food-check';
+        }
+
+        if (food.phase == 'Stay' && $scope.thin == true) {
+            return 'food-disabled';
+        }
+
+        return $scope.typeDisabled[food.type];
     };
 
 
     $scope.change = function(food) {
-        //console.log(food);
-
         $scope.resetTypeDisabled();
 
         $scope.inFoodsCheck(food);
 
         $scope.activeTypeDisabled();
-
-        console.log($scope.foodsCheck);
-        console.log($scope.typeDisabled);
     };
 
 

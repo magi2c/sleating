@@ -1,6 +1,29 @@
-.food-disabled {
-    text-decoration: line-through;
-    color: grey;
+label.food-disabled {
+  text-decoration: line-through;
+  color: #ff0011;
 }
-.chec
-
+label.food-check {
+  color: #2ecc71;
+}
+input[type=checkbox]:disabled {
+  border-color: #ff0011;
+  -webkit-box-shadow: inset 0 0 0 13px #ff0011;
+  -moz-box-shadow: inset 0 0 0 13px #ff0011;
+  -ms-box-shadow: inset 0 0 0 13px #ff0011;
+  -o-box-shadow: inset 0 0 0 13px #ff0011;
+  box-shadow: inset 0 0 0 13px #ff0011;
+}
+section .list li.group {
+  -webkit-box-shadow: inset 4px 0 #edba22;
+  -moz-box-shadow: inset 4px 0 #edba22;
+  -ms-box-shadow: inset 4px 0 #edba22;
+  -o-box-shadow: inset 4px 0 #edba22;
+  box-shadow: inset 4px 0 #edba22;
+}
+#layout-form li {
+  font-size: 1.1em;
+}
+#layout-form li label {
+  font-size: 1em;
+  margin: 0.2em 0;
+}

@@ -1,6 +1,9 @@
 <!doctype html>
 <html ng-app>
 <head>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <link rel="stylesheet" href="bower_components/lungo/lungo.css">
     <link rel="stylesheet" href="bower_components/lungo/lungo.icon.css">
     <link rel="stylesheet" href="bower_components/lungo/lungo.theme.css">
@@ -13,18 +16,48 @@
     <header>
             <h1 class="title centered" >Sleating</h1>
     </header>
-    <article id="form-indented" class="indented scroll active">
-        <div class="form">
-            <label>label +  input</label>
-            <fieldset class="radius shadow">
-                <fieldset ng-repeat="food in foods.hydrate">
-                <label ng-class="typeDisabled[food.type]" class="" >
-                    {{food.name}}</label>
-                <input type="checkbox" name="{{food.name}}" ng-click="change(food)" ng-disabled="typeDisabled[food.type]" class="text align_right error">
+
+    <nav data-control="groupbar">
+        <a href="#" data-view-article="layout-form" data-label="Foods" class=""></a>
+        <a href="#" data-view-article="layout-menu" data-label="Menu" data-count="{{foodsCheck.length}}" class="active"></a>
+        <a href="#" data-view-article="layout-info" data-label="Info" class=""></a>
+    </nav>
+
+
+    <article id="layout-form" class="list scroll active">
+        <ul>
+            <li class="form">
+                <strong class="text large bold">Selecting the target</strong>
+                <fieldset>
+                    <label class="anchor">Slimming or Stay</label>
+                    <input type="checkbox"  ng-model="thin" class="align_right">
                 </fieldset>
-            </fieldset>
-        </div>
+            </li>
+
+            <li ng-repeat-start="(name, foodGroup) in foods" class="anchor contrast">{{name}}</li>
+            <li ng-repeat-end class="group form">
+                <fieldset ng-repeat="food in foodGroup">
+                    <label ng-class="addFoodClass(food)" class="anchor" >
+                        {{food.name}}</label>
+                    <input type="checkbox" name="{{food.name}}" ng-click="change(food)" ng-disabled="isFoodDisabled(food)" class="align_right">
+                </fieldset>
+            </li>
+        </ul>
     </article>
+
+    <article id="layout-menu" class="list scroll">
+        <ul>
+            <li>
+                <strong>Eating slimming</strong>
+                <small ng-repeat="food in foodsCheck">{{food.name}}</small>
+            </li>
+        </ul>
+    </article>
+
+    <article id="layout-info" class="indented scroll">
+    </article>
+
+
 </section>
 
 
