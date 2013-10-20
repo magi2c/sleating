@@ -6,17 +6,17 @@
         {"name": "pasta soup", "type": "hydrate", "phase":"Slimming"}
     ],
     "Vegetables" : [
-        {"name": "chard", "type": "hydrate", "phase":"Slimming"},
-        {"name": "artichokes", "type": "hydrate", "phase":"Slimming"},
-        {"name": "broccoli", "type": "hydrate", "phase":"Slimming"},
-        {"name": "thistles", "type": "hydrate", "phase":"Slimming"},
-        {"name": "cabbage", "type": "hydrate", "phase":"Slimming"},
-        {"name": "cauliflower", "type": "hydrate", "phase":"Slimming"},
-        {"name": "spinach", "type": "hydrate", "phase":"Slimming"},
-        {"name": "lima beans", "type": "hydrate", "phase":"Slimming"},
-        {"name": "green beans", "type": "hydrate", "phase":"Slimming"},
-        {"name": "mushrooms", "type": "hydrate", "phase":"Slimming"},
-        {"name": "soy", "type": "hydrate", "phase":"Slimming"}
+        {"name": "chard", "type": "neutral", "phase":"Slimming"},
+        {"name": "artichokes", "type": "neutral", "phase":"Slimming"},
+        {"name": "broccoli", "type": "neutral", "phase":"Slimming"},
+        {"name": "thistles", "type": "neutral", "phase":"Slimming"},
+        {"name": "cabbage", "type": "neutral", "phase":"Slimming"},
+        {"name": "cauliflower", "type": "neutral", "phase":"Slimming"},
+        {"name": "spinach", "type": "neutral", "phase":"Slimming"},
+        {"name": "lima beans", "type": "neutral", "phase":"Slimming"},
+        {"name": "green beans", "type": "neutral", "phase":"Slimming"},
+        {"name": "mushrooms", "type": "neutral", "phase":"Slimming"},
+        {"name": "soy", "type": "neutral", "phase":"Slimming"}
     ],
     "Legumes" : [
         {"name": "chickpeas", "type": "hydrate", "phase":"Slimming"},
@@ -25,39 +25,39 @@
         {"name": "lentils", "type": "hydrate", "phase":"Slimming"}
     ],
     "Huerta" : [
-        {"name": "garlic", "type": "hydrate", "phase":"Slimming"},
-        {"name": "garlic", "type": "hydrate", "phase":"Slimming"},
-        {"name": "celery", "type": "hydrate", "phase":"Slimming"},
-        {"name": "eggplant", "type": "hydrate", "phase":"Slimming"},
-        {"name": "watercress", "type": "hydrate", "phase":"Slimming"},
-        {"name": "zucchini", "type": "hydrate", "phase":"Slimming"},
-        {"name": "onions", "type": "hydrate", "phase":"Slimming"},
-        {"name": "endive", "type": "hydrate", "phase":"Slimming"},
-        {"name": "asparagus", "type": "hydrate", "phase":"Slimming"},
-        {"name": "lettuce", "type": "hydrate", "phase":"Slimming"},
-        {"name": "turnips", "type": "hydrate", "phase":"Slimming"},
-        {"name": "cucumber", "type": "hydrate", "phase":"Slimming"},
-        {"name": "parsley", "type": "hydrate", "phase":"Slimming"},
-        {"name": "peppers", "type": "hydrate", "phase":"Slimming"},
-        {"name": "leeks", "type": "hydrate", "phase":"Slimming"},
-        {"name": "radishes", "type": "hydrate", "phase":"Slimming"},
-        {"name": "cabbage", "type": "hydrate", "phase":"Slimming"},
-        {"name": "tomatoes", "type": "hydrate", "phase":"Slimming"}
+        {"name": "garlic", "type": "neutral", "phase":"Slimming"},
+        {"name": "garlic shoots", "type": "neutral", "phase":"Slimming"},
+        {"name": "celery", "type": "neutral", "phase":"Slimming"},
+        {"name": "eggplant", "type": "neutral", "phase":"Slimming"},
+        {"name": "watercress", "type": "neutral", "phase":"Slimming"},
+        {"name": "zucchini", "type": "neutral", "phase":"Slimming"},
+        {"name": "onions", "type": "neutral", "phase":"Slimming"},
+        {"name": "endive", "type": "neutral", "phase":"Slimming"},
+        {"name": "asparagus", "type": "neutral", "phase":"Slimming"},
+        {"name": "lettuce", "type": "neutral", "phase":"Slimming"},
+        {"name": "turnips", "type": "neutral", "phase":"Slimming"},
+        {"name": "cucumber", "type": "neutral", "phase":"Slimming"},
+        {"name": "parsley", "type": "neutral", "phase":"Slimming"},
+        {"name": "peppers", "type": "neutral", "phase":"Slimming"},
+        {"name": "leeks", "type": "neutral", "phase":"Slimming"},
+        {"name": "radishes", "type": "neutral", "phase":"Slimming"},
+        {"name": "cabbage", "type": "neutral", "phase":"Slimming"},
+        {"name": "tomatoes", "type": "neutral", "phase":"Slimming"}
     ],
     "Fish" : [
-        {"name": "clams", "type": "hydrate", "phase":"Slimming"},
+        {"name": "clams", "type": "neutral", "phase":"Slimming"},
         {"name": "tuna", "type": "fat", "phase":"Slimming"},
-        {"name": "cod", "type": "hydrate", "phase":"Slimming"},
-        {"name": "nice", "type": "fat", "phase":"Slimming"},
+        {"name": "cod", "type": "neutral", "phase":"Slimming"},
+        {"name": "striped tuna", "type": "fat", "phase":"Slimming"},
         {"name": "anchovies", "type": "fat", "phase":"Slimming"},
         {"name": "mackerel", "type": "fat", "phase":"Slimming"},
-        {"name": "squid", "type": "hydrate", "phase":"Slimming"},
-        {"name": "prawns", "type": "hydrate", "phase":"Slimming"},
-        {"name": "mussels", "type": "hydrate", "phase":"Slimming"},
-        {"name": "hake", "type": "hydrate", "phase":"Slimming"},
-        {"name": "knives", "type": "hydrate", "phase":"Slimming"},
-        {"name": "octopus", "type": "hydrate", "phase":"Slimming"},
-        {"name": "monkfish", "type": "hydrate", "phase":"Slimming"},
+        {"name": "squid", "type": "neutral", "phase":"Slimming"},
+        {"name": "prawns", "type": "neutral", "phase":"Slimming"},
+        {"name": "mussels", "type": "neutral", "phase":"Slimming"},
+        {"name": "hake", "type": "neutral", "phase":"Slimming"},
+        {"name": "knives", "type": "neutral", "phase":"Slimming"},
+        {"name": "octopus", "type": "neutral", "phase":"Slimming"},
+        {"name": "monkfish", "type": "neutral", "phase":"Slimming"},
         {"name": "salmon", "type": "fat", "phase":"Slimming"},
         {"name": "sardines", "type": "fat", "phase":"Slimming"},
         {"name": "trout", "type": "fat", "phase":"Slimming"}
@@ -84,14 +84,14 @@
         {"name": "grape", "type": "fruit", "phase":"Slimming"}
     ],
     "Drinks" : [
-        {"name": "water", "type": "hydrate", "phase":"Slimming"},
-        {"name": "coffee (decaffeinated)", "type": "hydrate", "phase":"Slimming"},
+        {"name": "water", "type": "neutral", "phase":"Slimming"},
+        {"name": "coffee (decaffeinated)", "type": "neutral", "phase":"Slimming"},
         {"name": "milk", "type": "fat", "phase":"Slimming"},
-        {"name": "chamomile", "type": "hydrate", "phase":"Slimming"},
-        {"name": "mint", "type": "hydrate", "phase":"Slimming"},
-        {"name": "tea (decaffeinated)", "type": "hydrate", "phase":"Slimming"},
-        {"name": "valerian", "type": "hydrate", "phase":"Slimming"},
-        {"name": "red wine (200 ml / meal)", "type": "hydrate", "phase":"Stay"}
+        {"name": "chamomile", "type": "neutral", "phase":"Slimming"},
+        {"name": "mint", "type": "neutral", "phase":"Slimming"},
+        {"name": "tea (decaffeinated)", "type": "neutral", "phase":"Slimming"},
+        {"name": "valerian", "type": "neutral", "phase":"Slimming"},
+        {"name": "red wine (200 ml / meal)", "type": "neutral", "phase":"Stay"}
     ],
     "Dairy" : [
         {"name": "curd", "type": "fat", "phase":"Slimming"},
@@ -100,15 +100,15 @@
     ],
     "Seasonings" : [
         {"name": "hot oil (frying, cooking)", "type": "fat", "phase":"Slimming"},
-        {"name": "crude oil", "type": "hydrate", "phase":"Slimming"},
-        {"name": "espécies", "type": "hydrate", "phase":"Slimming"},
-        {"name": "salt", "type": "hydrate", "phase":"Slimming"},
-        {"name": "vinegar", "type": "hydrate", "phase":"Slimming"}
+        {"name": "crude oil", "type": "neutral", "phase":"Slimming"},
+        {"name": "espécies", "type": "neutral", "phase":"Slimming"},
+        {"name": "salt", "type": "neutral", "phase":"Slimming"},
+        {"name": "vinegar", "type": "neutral", "phase":"Slimming"}
     ],
     "Sweets" : [
         {"name": "chocolate (no sugar)", "type": "fat", "phase":"Stay"},
-        {"name": "fructose (sugar simile)", "type": "hydrate", "phase":"Slimming"},
+        {"name": "fructose (sugar simile)", "type": "neutral", "phase":"Slimming"},
         {"name": "cookies with max 3 % fat", "type": "hydrate", "phase":"Stay"},
-        {"name": "jam (no sugar)", "type": "hydrate", "phase":"Slimming"}
+        {"name": "jam (no sugar)", "type": "neutral", "phase":"Slimming"}
     ]
 }

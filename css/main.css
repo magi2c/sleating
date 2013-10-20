@@ -20,10 +20,16 @@ section .list li.group {
   -o-box-shadow: inset 4px 0 #edba22;
   box-shadow: inset 4px 0 #edba22;
 }
-#layout-form li {
+#main {
   font-size: 1.1em;
 }
-#layout-form li label {
+#main .count {
+  background-color: #2ecc71;
+}
+#main #layout-form li {
+  padding: 0 0.8em 0.2em;
+}
+#main #layout-form li label {
   font-size: 1em;
   margin: 0.2em 0;
 }

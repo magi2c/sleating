@@ -36,9 +36,26 @@ function AppCtrl($scope, $http, $templateCache, $sce) {
 
     $scope.activeTypeDisabled = function() {
         angular.forEach($scope.foodsCheck, function(food) {
-            $scope.typeDisabled[food.type] = 'food-disabled';
+
+            switch (food.type) {
+                case 'fruit':
+                    $scope.typeDisabled['hydrate'] = 'food-disabled';
+                    $scope.typeDisabled['fat'] = 'food-disabled';
+                    $scope.typeDisabled['neutral'] = 'food-disabled';
+                    break;
+                case 'hydrate':
+                    $scope.typeDisabled['fruit'] = 'food-disabled';
+                    $scope.typeDisabled['fat'] = 'food-disabled';
+                    break;
+                case 'neutral':
+                    $scope.typeDisabled['fat'] = 'food-disabled';
+                    break;
+                case 'fat':
+                    $scope.typeDisabled['fruit'] = 'food-disabled';
+                    $scope.typeDisabled['hydrate'] = 'food-disabled';
+                    break;
+            }
         });
-        //$scope.checked = true;
     };
 
 
@@ -64,10 +81,8 @@ function AppCtrl($scope, $http, $templateCache, $sce) {
 
 
     $scope.change = function(food) {
-        $scope.resetTypeDisabled();
-
         $scope.inFoodsCheck(food);
-
+        $scope.resetTypeDisabled();
         $scope.activeTypeDisabled();
     };
 
