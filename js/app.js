@@ -1,4 +1,20 @@
-function AppCtrl($scope, $http, $templateCache, $sce) {
+var translations = {
+    rice: 'arroz',
+    PARAGRAPH: 'Srsly!',
+    NAMESPACE: {
+        PARAGRAPH: 'And it comes with awesome features!'
+    }
+};
+var app = angular.module('myApp', ['pascalprecht.translate']);
+
+
+app.config(['$translateProvider', function ($translateProvider) {
+    // add translation table
+    $translateProvider.translations(translations);
+}]);
+
+app.controller('AppCtrl', ['$scope', '$http', function ($scope, $http) {
+
 
     $scope.foodsCheck = [];
     $scope.thin = true;
@@ -11,6 +27,7 @@ function AppCtrl($scope, $http, $templateCache, $sce) {
 
         return self.foods;
     };
+
     $scope.foods = $scope.getFoods();
 
     $scope.resetTypeDisabled = function() {
@@ -48,7 +65,7 @@ function AppCtrl($scope, $http, $templateCache, $sce) {
                     $scope.typeDisabled['fat'] = 'food-disabled';
                     break;
                 case 'neutral':
-                    $scope.typeDisabled['fat'] = 'food-disabled';
+                    $scope.typeDisabled['fruit'] = 'food-disabled';
                     break;
                 case 'fat':
                     $scope.typeDisabled['fruit'] = 'food-disabled';
@@ -88,5 +105,4 @@ function AppCtrl($scope, $http, $templateCache, $sce) {
 
 
 
-
-}
+}]);

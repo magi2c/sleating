@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="myApp">
 <head>
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -38,7 +38,7 @@
             <li ng-repeat-end class="group form">
                 <fieldset ng-repeat="food in foodGroup">
                     <label ng-class="addFoodClass(food)" class="anchor" >
-                        {{food.name}}</label>
+                        {{food.name | translate}}</label>
                     <input type="checkbox" name="{{food.name}}" ng-click="change(food)" ng-disabled="isFoodDisabled(food)" class="align_right">
                 </fieldset>
             </li>
@@ -62,6 +62,7 @@
 
 
 <script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-translate/angular-translate.js"></script>
 <script src="bower_components/quojs/quo.js"></script>
 <script src="bower_components/lungo/lungo.js"></script>
 <script>

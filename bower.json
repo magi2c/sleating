@@ -15,6 +15,7 @@
   ],
   "dependencies": {
     "angular": "~1.2.0-rc.2",
+    "angular-translate": "~1.1.0",
     "lungo": "~2.2.1"
   }
 }
