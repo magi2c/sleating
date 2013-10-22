@@ -1,20 +1,14 @@
-var translations = {
-    rice: 'arroz',
-    PARAGRAPH: 'Srsly!',
-    NAMESPACE: {
-        PARAGRAPH: 'And it comes with awesome features!'
-    }
-};
 var app = angular.module('myApp', ['pascalprecht.translate']);
 
-
 app.config(['$translateProvider', function ($translateProvider) {
-    // add translation table
-    $translateProvider.translations(translations);
+    $translateProvider.useStaticFilesLoader({
+        prefix: 'languages/',
+        suffix: '.json'
+    });
+    $translateProvider.preferredLanguage('es_ES');
 }]);
 
 app.controller('AppCtrl', ['$scope', '$http', function ($scope, $http) {
-
 
     $scope.foodsCheck = [];
     $scope.thin = true;

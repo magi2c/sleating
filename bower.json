@@ -15,7 +15,8 @@
   ],
   "dependencies": {
     "angular": "~1.2.0-rc.2",
-    "angular-translate": "~1.1.0",
+    "angular-translate": "*",
+    "angular-translate-loader-static-files": "*",
     "lungo": "~2.2.1"
   }
 }

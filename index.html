@@ -14,27 +14,27 @@
 
 <section id="main" data-transition="slide" data-aside="features" class="drag">
     <header>
-            <h1 class="title centered" >Sleating</h1>
+            <h1 class="title centered">{{'Sleating' | translate}}</h1>
     </header>
 
     <nav data-control="groupbar">
-        <a href="#" data-view-article="layout-form" data-label="Foods" class=""></a>
-        <a href="#" data-view-article="layout-menu" data-label="Menu" data-count="{{foodsCheck.length}}" class="active"></a>
-        <a href="#" data-view-article="layout-info" data-label="Info" class=""></a>
+        <a href="#" data-view-article="layout-form" data-label="{{'Foods' | translate}}" class=""></a>
+        <a href="#" data-view-article="layout-menu" data-label="{{'Menu' | translate}}" data-count="{{foodsCheck.length}}" class="active"></a>
+        <a href="#" data-view-article="layout-info" data-label="{{'Info' | translate}}" class=""></a>
     </nav>
 
 
     <article id="layout-form" class="list scroll active">
         <ul>
             <li class="form">
-                <strong class="text large bold">Selecting the target</strong>
+                <strong class="text large bold">{{'Selecting the target' | translate}}</strong>
                 <fieldset>
-                    <label class="anchor">Slimming or Stay</label>
+                    <label class="anchor">{{'Slimming or Stay' | translate}}</label>
                     <input type="checkbox"  ng-model="thin" class="align_right">
                 </fieldset>
             </li>
 
-            <li ng-repeat-start="(name, foodGroup) in foods" class="anchor contrast">{{name}}</li>
+            <li ng-repeat-start="(name, foodGroup) in foods" class="anchor contrast">{{name | translate}}</li>
             <li ng-repeat-end class="group form">
                 <fieldset ng-repeat="food in foodGroup">
                     <label ng-class="addFoodClass(food)" class="anchor" >
@@ -63,6 +63,7 @@
 
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-translate/angular-translate.js"></script>
+<script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
 <script src="bower_components/quojs/quo.js"></script>
 <script src="bower_components/lungo/lungo.js"></script>
 <script>
