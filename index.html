@@ -30,16 +30,21 @@
                 <strong class="text large bold">{{'Selecting the target' | translate}}</strong>
                 <fieldset>
                     <label class="anchor">{{'Slimming or Stay' | translate}}</label>
-                    <input type="checkbox"  ng-model="thin" class="align_right">
+                    <input type="checkbox"  ng-model="menu.thin" class="align_right"> 
                 </fieldset>
             </li>
 
             <li ng-repeat-start="(name, foodGroup) in foods" class="anchor contrast">{{name | translate}}</li>
             <li ng-repeat-end class="group form">
                 <fieldset ng-repeat="food in foodGroup">
-                    <label ng-class="addFoodClass(food)" class="anchor" >
+<!--                     <label ng-class="addFoodClass(food)" class="anchor" >
                         {{food.name | translate}}</label>
-                    <input type="checkbox" name="{{food.name}}" ng-click="change(food)" ng-disabled="isFoodDisabled(food)" class="align_right">
+                    <input type="checkbox" name="{{food.name}}" ng-click="change(food)" ng-disabled="isFoodDisabled(food)" class="align_right"> -->
+
+                    <label ng-class="menu.getFoodClass(food)" class="anchor" >
+                        {{food.name | translate}}</label>
+                    <input type="checkbox" name="{{food.name}}" ng-click="menu.toggleFood(food)" ng-disabled="menu.isFoodDisabled(food)" class="align_right"> 
+
                 </fieldset>
             </li>
         </ul>
@@ -73,6 +78,7 @@
     Lungo.init({});
 </script>
 <script src="js/app.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>
 

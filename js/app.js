@@ -8,10 +8,13 @@ app.config(['$translateProvider', function ($translateProvider) {
     $translateProvider.preferredLanguage('es_ES');
 }]);
 
-app.controller('AppCtrl', ['$scope', '$http', function ($scope, $http) {
+app.factory('menu', function() {
+  return new Menu();
+});
 
-    $scope.foodsCheck = [];
-    $scope.thin = true;
+
+
+app.controller('AppCtrl', ['$scope', '$http', 'menu', function ($scope, $http, menu) {
 
     $scope.getFoods = function() {
         var self = this;
@@ -23,8 +26,12 @@ app.controller('AppCtrl', ['$scope', '$http', function ($scope, $http) {
     };
 
     $scope.foods = $scope.getFoods();
+    $scope.menu = menu;
 
-    $scope.resetTypeDisabled = function() {
+
+
+
+/*    $scope.resetTypeDisabled = function() {
         $scope.typeDisabled = {hydrate: "",neutral: "",fat: "",fruit: ""};
     };
     $scope.resetTypeDisabled();
@@ -95,7 +102,7 @@ app.controller('AppCtrl', ['$scope', '$http', function ($scope, $http) {
         $scope.inFoodsCheck(food);
         $scope.resetTypeDisabled();
         $scope.activeTypeDisabled();
-    };
+    };*/
 
 
 
