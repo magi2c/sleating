@@ -19,7 +19,7 @@
 
     <nav data-control="groupbar">
         <a href="#" data-view-article="layout-form" data-label="{{'Foods' | translate}}" class=""></a>
-        <a href="#" data-view-article="layout-menu" data-label="{{'Menu' | translate}}" data-count="{{foodsCheck.length}}" class="active"></a>
+        <a href="#" data-view-article="layout-menu" data-label="{{'Menu' | translate}}" data-count="{{menu.foodsCheck.length}}" class="active"></a>
         <a href="#" data-view-article="layout-info" data-label="{{'Info' | translate}}" class=""></a>
     </nav>
 
@@ -54,7 +54,7 @@
         <ul>
             <li>
                 <strong>Eating slimming</strong>
-                <small ng-repeat="food in foodsCheck">{{food.name}}</small>
+                <small ng-repeat="food in menu.foodsCheck">{{food.name}}</small>
             </li>
         </ul>
     </article>
@@ -69,8 +69,8 @@
 </section>
 
 
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-translate/angular-translate.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-translate/angular-translate.min.js"></script>
 <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
 <script src="bower_components/quojs/quo.js"></script>
 <script src="bower_components/lungo/lungo.js"></script>
