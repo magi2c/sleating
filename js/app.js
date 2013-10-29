@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['pascalprecht.translate']);
+var app = angular.module('sleatingApp', ['pascalprecht.translate']);
 
 app.config(['$translateProvider', function ($translateProvider) {
     $translateProvider.useStaticFilesLoader({
