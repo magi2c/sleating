@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html xmlns:ng="http://angularjs.org">
 <head>
     <meta charset="utf-8">
     <title>Sleating</title>
@@ -45,14 +45,9 @@
             <li ng-repeat-start="(name, foodGroup) in foods" class="anchor contrast">{{name | translate}}</li>
             <li ng-repeat-end class="group form">
                 <fieldset ng-repeat="food in foodGroup">
-<!--                     <label ng-class="addFoodClass(food)" class="anchor" >
-                        {{food.name | translate}}</label>
-                    <input type="checkbox" name="{{food.name}}" ng-click="change(food)" ng-disabled="isFoodDisabled(food)" class="align_right"> -->
-
                     <label ng-class="menu.getFoodClass(food)" class="anchor" >
                         {{food.name | translate}}</label>
                     <input type="checkbox" name="{{food.name}}" ng-click="menu.toggleFood(food)" ng-disabled="menu.isFoodDisabled(food)" class="align_right"> 
-
                 </fieldset>
             </li>
         </ul>
@@ -88,6 +83,7 @@
 </section>
 
 
+
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-translate/angular-translate.min.js"></script>
 <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
@@ -101,8 +97,10 @@
             angular.bootstrap(document, ["sleatingApp"]);
         });
 </script>
+-
 <script src="js/app.js"></script>
 <script src="js/menu.js"></script>
+
 </body>
 </html>
 
