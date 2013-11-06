@@ -42,7 +42,7 @@
                 </fieldset>
             </li>
 
-            <li ng-repeat-start="(name, foodGroup) in foods" ng-click="groupShowToggle(name)" class="anchor contrast">
+            <li ng-repeat-start="(name, foodGroup) in foods" ng-click="groupShowToggle(name)" ng-class="groupShowClass(name)" class="contrast arrow">
                 {{name | translate}}
             </li>
             <li ng-repeat-end class="group form box" ng-show="groupShow[name]">

@@ -20,6 +20,27 @@ section .list li.group {
   -o-box-shadow: inset 4px 0 #edba22;
   box-shadow: inset 4px 0 #edba22;
 }
+section .list li.contrast {
+  cursor: pointer;
+}
+section .list li.arrow-down::after {
+  top: 30%;
+  right: 2.3em;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+section .list li.arrow-up::after {
+  top: 30%;
+  right: 2.3em;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
 #main {
   font-size: 1.1em;
 }
