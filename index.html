@@ -34,13 +34,11 @@
                 </fieldset>
             </li>
 
-            <li ng-repeat-start="(name, foodGroup) in foods" class="anchor contrast">{{name | translate}}</li>
-            <li ng-repeat-end class="group form">
+            <li ng-repeat-start="(name, foodGroup) in foods" ng-click="groupShowToggle(name)" class="anchor contrast">
+                {{name | translate}}
+            </li>
+            <li ng-repeat-end class="group form box" ng-show="groupShow[name]">
                 <fieldset ng-repeat="food in foodGroup">
-<!--                     <label ng-class="addFoodClass(food)" class="anchor" >
-                        {{food.name | translate}}</label>
-                    <input type="checkbox" name="{{food.name}}" ng-click="change(food)" ng-disabled="isFoodDisabled(food)" class="align_right"> -->
-
                     <label ng-class="menu.getFoodClass(food)" class="anchor" >
                         {{food.name | translate}}</label>
                     <input type="checkbox" name="{{food.name}}" ng-click="menu.toggleFood(food)" ng-disabled="menu.isFoodDisabled(food)" class="align_right"> 
