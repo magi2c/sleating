@@ -32,6 +32,13 @@ app.controller('AppCtrl', ['$scope', '$http', 'menu', function ($scope, $http, m
         $scope.groupShow[groupKey] = ! $scope.groupShow[groupKey]
     }
 
+    $scope.groupShowClass = function(groupKey) {
+        if ($scope.groupShow[groupKey]) {
+            return 'arrow-up';
+        }
+        return 'arrow-down';
+    }
+
 
     $scope.getFoods();
     $scope.menu = menu;
