@@ -1,10 +1,18 @@
 {
-    "Sleating": "AdelgazarComiendo",
     "Foods": "Alimentos",
     "Menu": "Menú",
     "Selecting the target": "Seleccionar el objetivo",
     "Slimming or Stay": "Adelgazar o Mantenerse",
     "Eating slimming": "Adelgazar comiendo",
+    "Sleating is webApp version of adelgazarcomiendo.com": "Sleating es la versión webApp de adelgazarcomiendo.com",
+    "What I want to eat now (or later) and ... how blends well." : "Qué me apetece comer ahora (o después) y... con qué combina bien.",
+    "1.- Select the target: lose weight or stay.":"1.- Seleccionar el objetivo: adelgazar o mantenerse.",
+    "2.- Select more fancy food.":"2.- Seleccionar el alimento que más apetece.",
+    "3.- Continue selecting.":"3.- Seguir seleccionando.",
+
+    "Language" : "Idioma",
+    "Spanish" : "Español",
+    "English" : "Inglés",
 
     "Carbohydrates":"Hidratos",
     "rice":"arroz",

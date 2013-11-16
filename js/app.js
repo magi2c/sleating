@@ -14,7 +14,7 @@ app.factory('menu', function() {
 
 
 
-app.controller('AppCtrl', ['$scope', '$http', 'menu', function ($scope, $http, menu) {
+app.controller('AppCtrl', ['$scope', '$http', 'menu', '$translate', function ($scope, $http, menu, $translate) {
 
     $scope.getFoods = function() {
         $http.get("doc/foods.json").success(function(jsonF) {
@@ -26,6 +26,15 @@ app.controller('AppCtrl', ['$scope', '$http', 'menu', function ($scope, $http, m
         }
 
         });
+    }
+
+    $scope.languages = [
+        {name:'Spanish', key:'es_ES'},
+        {name:'English', key:'en_EN'}
+    ];
+    $scope.language = $scope.languages[0];
+    $scope.changeLanguage = function (lang) {
+        $translate.uses(lang.key);
     };
 
     $scope.groupShowToggle = function(groupKey) {
@@ -34,9 +43,9 @@ app.controller('AppCtrl', ['$scope', '$http', 'menu', function ($scope, $http, m
 
     $scope.groupShowClass = function(groupKey) {
         if ($scope.groupShow[groupKey]) {
-            return 'arrow-up';
+            return 'minus';
         }
-        return 'arrow-down';
+        return 'plus';
     }
 
 
