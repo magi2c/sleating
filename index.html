@@ -18,19 +18,23 @@
     <link rel="stylesheet" href="css/main.css">
 
 </head>
-<body ng-controller="AppCtrl">
+<body ng-controller="AppCtrl" id="app">
 
-<section id="main" data-transition="slide" data-aside="features" class="drag">
+<section id="main" data-transition="slide" data-aside="features" class="show">
     <header>
         <h1 class="title centered">{{'Sleating' | translate}}</h1>
+        <nav class="on-right">
+            <button data-view-section="section-info" data-icon="menu">
+                <span class="">
+                </span>
+            </button>
+        </nav>
     </header>
 
     <nav data-control="groupbar">
         <a href="#" data-view-article="layout-form" data-label="{{'Foods' | translate}}" class=""></a>
         <a href="#" data-view-article="layout-menu" data-label="{{'Menu' | translate}}" data-count="{{menu.foodsCheck.length}}" class="active"></a>
-        <a href="#" data-view-article="layout-info" data-label="{{'Info' | translate}}" class=""></a>
     </nav>
-
 
     <article id="layout-form" class="list scroll active">
         <ul>
@@ -42,7 +46,10 @@
                 </fieldset>
             </li>
 
-            <li ng-repeat-start="(name, foodGroup) in foods" ng-click="groupShowToggle(name)" ng-class="groupShowClass(name)" class="contrast arrow">
+            <li ng-repeat-start="(name, foodGroup) in foods" ng-click="groupShowToggle(name)"  class="contrast">
+                <div class="on-right">
+                    <span class="icon" ng-class="groupShowClass(name)"></span>
+                </div>
                 {{name | translate}}
             </li>
             <li ng-repeat-end class="group form box" ng-show="groupShow[name]">
@@ -63,24 +70,42 @@
             </li>
         </ul>
     </article>
+</section>
 
-    <article id="layout-info" class="indented scroll">
-        <div>
-            <h1 class="title">{{ 'Sleating is webApp version of adelgazarcomiendo.com' | translate }}</h1>
-            <p>{{ 'What I want to eat now (or later) and ... how blends well.' | translate }}</p>
-            <ul>
-                <li>
-                    <strong>{{ '1.- Seleccionar el objetivo: adelgazar o mantenerse.' | translate }}</strong>
-                </li>
-                <li>
-                    <strong>{{ '2.- Select more fancy food.' | translate }}</strong>
-                </li>
-                <li>
-                    <strong>{{ '3.- Continue selecting.' | translate }}</strong>
-                </li>
-            </ul>
-        </div>
+
+
+<section id="section-info" data-transition="slide" data-aside="features">
+    <header>
+        <nav class="left"><a href="#" data-view-section="back"><span class="icon chevron-left"></span></a></nav>
+        <h1 class="title centered">{{'Sleating' | translate}}</h1>
+    </header>
+
+
+    <article id="art-info" class="list scroll indented">
+
+        <ul>
+            <li>
+                <strong>Info:</strong>
+                <small>{{ 'Sleating is webApp version of adelgazarcomiendo.com' | translate }}</small>
+                <small>{{ 'What I want to eat now (or later) and ... how blends well.' | translate }}</small>
+                <ul>
+                    <li>{{ '1.- Seleccionar el objetivo: adelgazar o mantenerse.' | translate }}</li>
+                    <li>{{ '2.- Select more fancy food.' | translate }}</li>
+                    <li>{{ '3.- Continue selecting.' | translate }}</li>
+                </ul>
+            </li>
+
+            <li class="form">
+                <strong>{{ 'Language' | translate }}:</strong>
+                <label class="select">
+                    <select class="custom" ng-model="language" ng-options="l.name | translate for l in languages" ng-change='changeLanguage(language)'></select>
+                </label>
+            </li>
+        </ul>
     </article>
+
+
+
 </section>
 
 

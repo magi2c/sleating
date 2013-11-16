@@ -23,31 +23,17 @@ section .list li.group {
 section .list li.contrast {
   cursor: pointer;
 }
-section .list li.arrow-down::after {
-  top: 30%;
-  right: 2.3em;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
+section .list li .on-right .icon {
+  margin: 6px 25px 0px 0px;
+  font-size: 1.4em!important;
 }
-section .list li.arrow-up::after {
-  top: 30%;
-  right: 2.3em;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-#main {
+#app {
   font-size: 1.1em;
 }
-#main .count {
+#app .count {
   background-color: #2ecc71;
 }
-#main header {
+#app header {
   background-color: #336699;
   -webkit-box-shadow: inset 0 -1px #336699, 0 1px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 -1px #336699, 0 1px rgba(0, 0, 0, 0.1);
@@ -55,28 +41,34 @@ section .list li.arrow-up::after {
   -o-box-shadow: inset 0 -1px #336699, 0 1px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 -1px #336699, 0 1px rgba(0, 0, 0, 0.1);
 }
-#main header .title {
+#app header .title {
   -webkit-text-shadow: 0 0.1em #336699;
   -moz-text-shadow: 0 0.1em #336699;
   -ms-text-shadow: 0 0.1em #336699;
   -o-text-shadow: 0 0.1em #336699;
   text-shadow: 0 0.1em #336699;
 }
-#main nav[data-control=groupbar] > a.active,
-#main nav[data-control=groupbar] > a:active {
+#app nav[data-control=groupbar] > a.active,
+#app nav[data-control=groupbar] > a:active {
   -webkit-box-shadow: inset 0 -0.3em #336699;
   -moz-box-shadow: inset 0 -0.3em #336699;
   -ms-box-shadow: inset 0 -0.3em #336699;
   -o-box-shadow: inset 0 -0.3em #336699;
   box-shadow: inset 0 -0.3em #336699;
 }
-#main #layout-form {
+#app #layout-form {
   background-color: #FFFFFF;
 }
-#main #layout-form li {
+#app #layout-form li {
   padding: 0 0.8em 0.2em;
 }
-#main #layout-form li label {
+#app #layout-form li label {
   font-size: 1em;
   margin: 0.2em 0;
+}
+#app section header > nav:not(.on-right) a,
+#app section header > nav:not(.on-right) button {
+  color: #FFFFFF;
+  -webkit-text-shadow: 0 0.1em #FFFFFF;
+  text-shadow: 0 0.1em #FFFFFF;
 }

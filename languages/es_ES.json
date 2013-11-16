@@ -1,5 +1,4 @@
 {
-    "Sleating": "AdelgazarComiendo",
     "Foods": "Alimentos",
     "Menu": "Menú",
     "Selecting the target": "Seleccionar el objetivo",
@@ -10,6 +9,10 @@
     "1.- Select the target: lose weight or stay.":"1.- Seleccionar el objetivo: adelgazar o mantenerse.",
     "2.- Select more fancy food.":"2.- Seleccionar el alimento que más apetece.",
     "3.- Continue selecting.":"3.- Seguir seleccionando.",
+
+    "Language" : "Idioma",
+    "Spanish" : "Español",
+    "English" : "Inglés",
 
     "Carbohydrates":"Hidratos",
     "rice":"arroz",

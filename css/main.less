@@ -41,22 +41,20 @@ section {
     li.contrast {
         cursor: pointer;
     }
-    li.arrow-down::after {
-        top: 30%;
-        right: 2.3em;
-        .transform(rotate(135deg));
-    }
-    li.arrow-up::after {
-      top: 30%;
-      right: 2.3em;
-      .transform(rotate(-45deg));
+    li {
+      .on-right {
+        .icon {
+          margin: 6px 25px 0px 0px;
+          font-size: 1.4em!important;
+        }
+      }
     }
   }
 }
 
 
 
-#main {
+#app {
   font-size: 1.1em;
   .count {
     background-color: #2ecc71;
@@ -87,8 +85,15 @@ section {
         margin: 0.2em 0;
       }
     }
-    //#336699
   }
+
+  section header > nav:not(.on-right) a,
+  section header > nav:not(.on-right) button {
+    color: #FFFFFF;
+    -webkit-text-shadow: 0 0.1em #FFFFFF;
+    text-shadow: 0 0.1em #FFFFFF;
+  }
+
 }
 
 
