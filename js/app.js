@@ -8,10 +8,10 @@ app.config(['$translateProvider', function ($translateProvider) {
     $translateProvider.preferredLanguage('es_ES');
 }]);
 
+
 app.factory('menu', function() {
   return new Menu();
 });
-
 
 
 app.controller('AppCtrl', ['$scope', '$http', 'menu', '$translate', function ($scope, $http, menu, $translate) {
@@ -20,11 +20,10 @@ app.controller('AppCtrl', ['$scope', '$http', 'menu', '$translate', function ($s
         $http.get("doc/foods.json").success(function(jsonF) {
             $scope.foods = jsonF;
         
-        $scope.groupShow = {};
-        for (groupKey in $scope.foods) {
-            $scope.groupShow[groupKey] = false;
-        }
-
+            $scope.groupShow = {};
+            for (groupKey in $scope.foods) {
+                $scope.groupShow[groupKey] = false;
+            }
         });
     }
 
@@ -35,7 +34,7 @@ app.controller('AppCtrl', ['$scope', '$http', 'menu', '$translate', function ($s
     $scope.language = $scope.languages[0];
     $scope.changeLanguage = function (lang) {
         $translate.uses(lang.key);
-    };
+    }
 
     $scope.groupShowToggle = function(groupKey) {
         $scope.groupShow[groupKey] = ! $scope.groupShow[groupKey]
@@ -47,7 +46,6 @@ app.controller('AppCtrl', ['$scope', '$http', 'menu', '$translate', function ($s
         }
         return 'plus';
     }
-
 
     $scope.getFoods();
     $scope.menu = menu;

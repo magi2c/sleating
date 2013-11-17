@@ -1,9 +1,7 @@
-'use strict';
-
-function Menu () {
-	self = this;
+var Menu = function() {
+    var self = this;
 	this.foodsCheck = [];
-	this.thin = true; //ToDo change for phase	
+	this.thin = true; //ToDo change for phase
 	this.typeDisabled = resetTypeDisabled();
 
 	function resetTypeDisabled() {
@@ -78,6 +76,3 @@ function Menu () {
 Menu.FOOD_CHECK 	= 'food-check';
 Menu.FOOD_DISABLED 	= 'food-disabled';
 Menu.PHASE_STAY	   	= 'Stay';
-
-
-
