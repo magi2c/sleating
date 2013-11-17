@@ -101,7 +101,7 @@
     "Seasonings" : [
         {"name": "hot oil (frying, cooking)", "type": "fat", "phase":"Slimming"},
         {"name": "crude oil", "type": "neutral", "phase":"Slimming"},
-        {"name": "espécies", "type": "neutral", "phase":"Slimming"},
+        {"name": "species", "type": "neutral", "phase":"Slimming"},
         {"name": "salt", "type": "neutral", "phase":"Slimming"},
         {"name": "vinegar", "type": "neutral", "phase":"Slimming"}
     ],
