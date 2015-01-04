@@ -17,12 +17,61 @@
     <link rel="stylesheet" href="bower_components/lungo/lungo.theme.css">
     <link rel="stylesheet" href="css/main.css">
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/stacktrace.js/0.6.4/stacktrace.js"></script>
+
 <script type="text/javascript">
-    // your code...
-    var trace = printStackTrace();
-    alert(trace.join('\n\n')); // Output however you want!
-    // more code of yours...
+    window._trackJs = {
+        // Whether to send errors to TrackJS
+        enabled: true,
+        // Custom error callback
+        onError: function () { return true; },
+        // Custom object serialization
+        serialize: function (what) { return what.toString(); },
+        // Custom session identifier.
+        sessionId: "",
+        // Your TrackJS token
+        token: "3c1ac67e48ac4ab291b77d1a6389b5b4",
+        // An application key (optional)
+        application: "",
+        // Custom user identifier.
+        userId: "",
+        // Custom application version identifier.
+        version: "",
+        callback: {
+        // Watch host-function callbacks for errors
+        enabled: true,
+        // Whether to capture extended stacktraces
+        bindStack: false
+        },
+        console: {
+        // Watch the console for events
+        enabled: true,
+        // Pass console messages through to the browser
+        display: true,
+        // Transmit console errors to TrackJS
+        error: true,
+        // Names of console functions to watch
+        watch: ["log","debug","info","warn","error"]
+        },
+        network: {
+        // Watch the network for events
+        enabled: true,
+        // Transmit network failures to TrackJS
+        error: true
+        },
+        visitor: {
+        // Watch visitor interactions for events
+        enabled: true
+        },
+        window: {
+        // Watch the window for global errors
+        enabled: true
+        }
+        };
+</script>
+<script type="text/javascript" src="//d2zah9y47r7bi2.cloudfront.net/releases/current/tracker.js" data-token="3c1ac67e48ac4ab291b77d1a6389b5b4"></script>
+
+<script type="text/javascript">
+    var traceError = jQuery();
 </script>
      
     
